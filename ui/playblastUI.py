@@ -1,0 +1,186 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'C:\Users\amol\PycharmProjects\mayatools\ui\playblastUI.ui'
+#
+# Created: Wed Apr 19 13:03:41 2017
+#      by: pyside-uic 0.2.14 running on PySide 1.2.0
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide import QtCore, QtGui
+
+
+class Ui_playblastUI(object):
+    def setupUi(self, playblastUI):
+        playblastUI.setObjectName("playblastUI")
+        playblastUI.resize(502, 507)
+        playblastUI.setStyleSheet("")
+        self.gridLayout_4 = QtGui.QGridLayout(playblastUI)
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.verticalLayout_3 = QtGui.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.gridLayout_2 = QtGui.QGridLayout()
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.HUD_3_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_3_LE.setObjectName("HUD_3_LE")
+        self.gridLayout_2.addWidget(self.HUD_3_LE, 0, 2, 1, 1)
+        self.HUD_2_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_2_LE.setObjectName("HUD_2_LE")
+        self.gridLayout_2.addWidget(self.HUD_2_LE, 0, 1, 1, 1)
+        self.HUD_1_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_1_LE.setObjectName("HUD_1_LE")
+        self.gridLayout_2.addWidget(self.HUD_1_LE, 0, 0, 1, 1)
+        self.HUD_4_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_4_LE.setObjectName("HUD_4_LE")
+        self.gridLayout_2.addWidget(self.HUD_4_LE, 1, 0, 1, 1)
+        self.HUD_5_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_5_LE.setObjectName("HUD_5_LE")
+        self.gridLayout_2.addWidget(self.HUD_5_LE, 1, 1, 1, 1)
+        self.HUD_6_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_6_LE.setObjectName("HUD_6_LE")
+        self.gridLayout_2.addWidget(self.HUD_6_LE, 1, 2, 1, 1)
+        self.verticalLayout_3.addLayout(self.gridLayout_2)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.verticalLayout_2 = QtGui.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.label = QtGui.QLabel(playblastUI)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout_2.addWidget(self.label)
+        self.camera_LW = QtGui.QListWidget(playblastUI)
+        self.camera_LW.setObjectName("camera_LW")
+        self.verticalLayout_2.addWidget(self.camera_LW)
+        self.horizontalLayout_2.addLayout(self.verticalLayout_2)
+        self.verticalLayout = QtGui.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.label_2 = QtGui.QLabel(playblastUI)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.verticalLayout.addWidget(self.label_2)
+        self.resolution_LW = QtGui.QListWidget(playblastUI)
+        self.resolution_LW.setObjectName("resolution_LW")
+        self.verticalLayout.addWidget(self.resolution_LW)
+        self.checkBox = QtGui.QCheckBox(playblastUI)
+        self.checkBox.setObjectName("checkBox")
+        self.verticalLayout.addWidget(self.checkBox)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.custResX_SB = QtGui.QSpinBox(playblastUI)
+        self.custResX_SB.setEnabled(False)
+        self.custResX_SB.setAlignment(QtCore.Qt.AlignCenter)
+        self.custResX_SB.setReadOnly(False)
+        self.custResX_SB.setMinimum(0)
+        self.custResX_SB.setMaximum(999999999)
+        self.custResX_SB.setProperty("value", 1280)
+        self.custResX_SB.setObjectName("custResX_SB")
+        self.horizontalLayout.addWidget(self.custResX_SB)
+        self.custResY_SB = QtGui.QSpinBox(playblastUI)
+        self.custResY_SB.setEnabled(False)
+        self.custResY_SB.setAlignment(QtCore.Qt.AlignCenter)
+        self.custResY_SB.setMaximum(999999999)
+        self.custResY_SB.setProperty("value", 720)
+        self.custResY_SB.setObjectName("custResY_SB")
+        self.horizontalLayout.addWidget(self.custResY_SB)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.horizontalLayout_2.addLayout(self.verticalLayout)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_2)
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.label_3 = QtGui.QLabel(playblastUI)
+        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 0, 0, 1, 1)
+        self.label_4 = QtGui.QLabel(playblastUI)
+        self.label_4.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 0, 1, 1, 1)
+        self.startFrame_DSB = QtGui.QDoubleSpinBox(playblastUI)
+        self.startFrame_DSB.setAlignment(QtCore.Qt.AlignCenter)
+        self.startFrame_DSB.setMinimum(-999999999.0)
+        self.startFrame_DSB.setMaximum(999999999.0)
+        self.startFrame_DSB.setProperty("value", 0.0)
+        self.startFrame_DSB.setObjectName("startFrame_DSB")
+        self.gridLayout.addWidget(self.startFrame_DSB, 1, 0, 1, 1)
+        self.endFrame_DSB = QtGui.QDoubleSpinBox(playblastUI)
+        self.endFrame_DSB.setAlignment(QtCore.Qt.AlignCenter)
+        self.endFrame_DSB.setMinimum(-999999999.0)
+        self.endFrame_DSB.setMaximum(999999999.0)
+        self.endFrame_DSB.setObjectName("endFrame_DSB")
+        self.gridLayout.addWidget(self.endFrame_DSB, 1, 1, 1, 1)
+        self.verticalLayout_3.addLayout(self.gridLayout)
+        self.gridLayout_3 = QtGui.QGridLayout()
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.HUD_8_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_8_LE.setObjectName("HUD_8_LE")
+        self.gridLayout_3.addWidget(self.HUD_8_LE, 0, 1, 1, 1)
+        self.HUD_10_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_10_LE.setObjectName("HUD_10_LE")
+        self.gridLayout_3.addWidget(self.HUD_10_LE, 1, 0, 1, 1)
+        self.HUD_7_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_7_LE.setObjectName("HUD_7_LE")
+        self.gridLayout_3.addWidget(self.HUD_7_LE, 0, 0, 1, 1)
+        self.HUD_9_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_9_LE.setObjectName("HUD_9_LE")
+        self.gridLayout_3.addWidget(self.HUD_9_LE, 0, 2, 1, 1)
+        self.HUD_11_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_11_LE.setObjectName("HUD_11_LE")
+        self.gridLayout_3.addWidget(self.HUD_11_LE, 1, 1, 1, 1)
+        self.HUD_12_LE = QtGui.QLineEdit(playblastUI)
+        self.HUD_12_LE.setObjectName("HUD_12_LE")
+        self.gridLayout_3.addWidget(self.HUD_12_LE, 1, 2, 1, 1)
+        self.verticalLayout_3.addLayout(self.gridLayout_3)
+        self.horizontalLayout_3 = QtGui.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.pushButton = QtGui.QPushButton(playblastUI)
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout_3.addWidget(self.pushButton)
+        self.pushButton_2 = QtGui.QPushButton(playblastUI)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout_3.addWidget(self.pushButton_2)
+        self.verticalLayout_3.addLayout(self.horizontalLayout_3)
+        self.gridLayout_4.addLayout(self.verticalLayout_3, 0, 0, 1, 1)
+
+        self.retranslateUi(playblastUI)
+        QtCore.QMetaObject.connectSlotsByName(playblastUI)
+
+    def retranslateUi(self, playblastUI):
+        playblastUI.setWindowTitle(
+            QtGui.QApplication.translate("playblastUI", "PlayblastUI", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_3_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 3", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_2_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 2", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_1_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 1", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_4_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 4", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_5_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 5", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_6_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 6", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("playblastUI", "Cameras", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(
+            QtGui.QApplication.translate("playblastUI", "Resolutions", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox.setText(
+            QtGui.QApplication.translate("playblastUI", "Custom", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_3.setText(
+            QtGui.QApplication.translate("playblastUI", "Start Frame", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_4.setText(
+            QtGui.QApplication.translate("playblastUI", "EndFrame", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_8_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 8", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_10_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 10", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_7_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 7", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_9_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 9", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_11_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 11", None, QtGui.QApplication.UnicodeUTF8))
+        self.HUD_12_LE.setPlaceholderText(
+            QtGui.QApplication.translate("playblastUI", "heads up display 12", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton.setText(
+            QtGui.QApplication.translate("playblastUI", "Create", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_2.setText(
+            QtGui.QApplication.translate("playblastUI", "Cancel", None, QtGui.QApplication.UnicodeUTF8))

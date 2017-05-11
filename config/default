@@ -1,0 +1,15 @@
+[VALIDATIONS]
+rig : ['CheckCTRLNaming', 'CheckCtrlTransform', 'CheckMasterCtrl', 'CheckNamespace', 'CheckPluginRequired',
+       'CheckTopNodes', 'CheckUselessConstrains', 'CheckUtilityNodeNaming', 'MayaValidations', 'TestingTheUI']
+
+anim : []
+
+[NAMESPACE]
+namespace : NONE
+
+[MASTERCTRL]
+main_ctrl : Main_CTRL
+
+[NAME]
+rendersetname : RenderSet
+geomgroupname : Geometries

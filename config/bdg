@@ -1,0 +1,23 @@
+[VALIDATIONS]
+rig : ['CheckCtrlTransform', 'CheckNamespace', 'CheckUselessConstrains', 'MayaValidations', 'TestingTheUI',
+        'CheckTopNodes', 'CheckPluginRequired', 'CheckRenderSet', 'TexturePathCheck', 'BDGTopGroupCheck']
+
+anim : ['CheckFrameLength', 'CheckUnknownNodes', 'CheckAudio', 'CheckFrameLength', 'CheckRootHiearchy']
+
+[NAMESPACE]
+namespace : NONE
+
+[MASTERCTRL]
+main_ctrl : Main_CTRL
+
+[NAME]
+rendersetname : RenderSet
+geomgroupname : Geometries
+
+[SETTINGS]
+settingsinfonode : shot
+renderresolution : 1920 x 1080
+fps : 25
+
+[TOPNODES]
+defaults : ['__SUBSET__','__SET__','__CAMERA__','__CHARS__','__PROPS__']
